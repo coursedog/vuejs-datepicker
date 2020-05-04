@@ -1,5 +1,5 @@
 {
-  "name": "@hokify/vuejs-datepicker",
+  "name": "vuejs-datepicker",
   "version": "2.0.2",
   "publishConfig": {
     "access": "public"
@@ -23,13 +23,6 @@
   "contributors": [
     "Simon Tretter <s.tretter@gmail.com>"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hokify/vuejs-datepicker"
-  },
-  "bugs": {
-    "url": "https://github.com/hokify/vuejs-datepicker/issues"
-  },
   "private": false,
   "license": "MIT",
   "scripts": {
@@ -86,7 +79,7 @@
     "rollup-plugin-postcss": "^2.0.3",
     "rollup-plugin-replace": "^2.2.0",
     "rollup-plugin-serve": "^1.0.1",
-    "rollup-plugin-uglify": "^6.0.2",
+    "rollup-plugin-terser": "^5.3.0",
     "rollup-plugin-vue": "^5.0.0",
     "semver": "^6.0.0",
     "vue": "^2.5.16",
