@@ -134,11 +134,12 @@ const utils = {
    * @return {String}
    */
   getMonthName (date) {
+    const parser = this.useUtc ? moment.utc : moment
     if (typeof date === 'object') {
-      return moment(date).locale(this.language).format('MMMM')
+      return parser(date).locale(this.language).format('MMMM')
     }
     if (typeof date === 'number') {
-      return moment().month(date).locale(this.language).format('MMMM')
+      return parser().month(date).locale(this.language).format('MMMM')
     }
     throw TypeError('Invalid type')
   },
@@ -149,11 +150,12 @@ const utils = {
    * @return {String}
    */
   getMonthNameAbbr (date) {
+    const parser = this.useUtc ? moment.utc : moment
     if (typeof date === 'object') {
-      return moment(date).locale(this.language).format('MMM')
+      return parser(date).locale(this.language).format('MMM')
     }
     if (typeof date === 'number') {
-      return moment().month(date).locale(this.language).format('MMM')
+      return parser().month(date).locale(this.language).format('MMM')
     }
     throw TypeError('Invalid type')
   },
